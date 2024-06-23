@@ -10,7 +10,6 @@ def add_todo():
     print(todo)
 
 
-
 st.title("My Todo App")
 st.subheader("This is my todo app.")
 st.write("This app is to increase your productivity.")
@@ -29,7 +28,7 @@ for index, todo in enumerate(todos):
 
 
 st.text_input(label="", placeholder="Enter a todo...",
-              on_change=add_todo, key = 'new_todo')
+              on_change=add_todo, key='new_todo')
 
 print("Hello")
 

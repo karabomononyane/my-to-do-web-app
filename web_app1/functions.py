@@ -8,8 +8,8 @@ def get_todos(todos_local):
         to-do items
     """
     filepath = os.path.join(os.getcwd(), "todos.txt")
-    with open(filepath, 'r') as file_local:
-        todos_local = file_local.readlines()
+    with open(filepath, "r") as file_local:
+        todos_local =[line.strip() for line in file_local.readlines()]
     return todos_local
 
 

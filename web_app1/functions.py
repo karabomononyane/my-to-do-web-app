@@ -1,13 +1,13 @@
 import os
 
 
-def get_todos(todos_local):
+def get_todos():
     """ Read a text file and return a list of
         to-do items
     """
     filepath = os.path.join(os.getcwd(), "todos.txt")
     with open(filepath, "r") as file_local:
-        todos_local =[line.strip() for line in file_local.readlines()]
+        todos_local = [line.strip() for line in file_local.readlines()]
     return todos_local
 
 

@@ -1,7 +1,5 @@
 import os
 
-import os
-
 
 def get_todos(todos_local):
     """ Read a text file and return a list of
